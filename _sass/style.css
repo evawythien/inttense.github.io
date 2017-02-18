@@ -1,0 +1,22 @@
+html {
+    font-family: 'Cutive Mono', monospace;
+}
+
+header {
+    background-color: #171A1B;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+}
+
+body {
+    background-color: #FFFAFA;
+}
+
+footer {
+    background-color: #171A1B;
+    height: 10%;
+    width: 100%;
+    position:absolute;
+    bottom:0px;
+}
