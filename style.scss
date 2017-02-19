@@ -15,11 +15,13 @@
 
 html {
   font-size: 100%;
+
 }
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font-size: 17px;
+  font-family: 'Cutive Mono', monospace;
   color: $darkGray;
 }
 
@@ -151,6 +153,10 @@ img {
 //
 
 .wrapper-masthead {
+  background-color: #171A1B;
+  height: 10%;
+  width: 100%;
+  position: fixed;
   margin-bottom: 50px;
 }
 
@@ -272,10 +278,12 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  margin-top: 50px; 
+  background-color: #171A1B;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
 }
 
 footer {
