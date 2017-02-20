@@ -2,7 +2,7 @@ html {
     font-family: 'Cutive Mono', monospace;
 }
 
-header {
+#wrapper-masthead {
     background-color: #171A1B;
     height: 10%;
     width: 100%;
@@ -13,7 +13,7 @@ body {
     background-color: #FFFAFA;
 }
 
-footer {
+#wrapper-footer {
     background-color: #171A1B;
     height: 10%;
     width: 100%;
