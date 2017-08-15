@@ -13,8 +13,8 @@ body {
     background-color: #FFFAFA;
 }
 
-#wrapper-footer {
-    background-color: #171A1B;
+.wrapper-footer {
+    background-color: red;
     height: 10%;
     width: 100%;
     position:absolute;
