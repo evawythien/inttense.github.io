@@ -8,13 +8,10 @@
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/font-awesome-4.7.0/css/font-awesome.css" />
+    
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
-
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
@@ -30,7 +27,7 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blogg</a>
+            <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
@@ -44,10 +41,7 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-         <!-- {% include svg-icons.html %} -->
-          <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
-          <i class="fa fa-github-alt" aria-hidden="true"></i>          
+          {% include svg-icons.html %}
         </footer>
       </div>
     </div>
