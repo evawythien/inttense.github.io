@@ -154,10 +154,10 @@ img {
 
 .wrapper-masthead {
   background-color: #171A1B;
-  height: 10%;
   width: 100%;
   position: fixed;
   margin-bottom: 50px;
+  top: 0px;
 }
 
 .masthead {
@@ -278,7 +278,7 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px; 
+  margin-top: 50px;
   background-color: #171A1B;
   height: 10%;
   width: 100%;
