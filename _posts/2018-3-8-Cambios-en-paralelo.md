@@ -4,7 +4,6 @@ title: Cambios en paralelo
 ---
 
 h1. Reglas
-
 Nunca se debe de perder el servicio.
 Los despliegues requieren versiones en paralelo.
 Los despliegues deben de ser lo mas pequeños posibles.

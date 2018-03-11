@@ -1,15 +1,13 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
-Some information about you!
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[evadvgarcia@gmail.com](mailto:evadvgarcia@gmail.com)
+
+<a href="EvaMariadeVenaGarcia_CurriculumVitae.pdf" download="EvaMariadeVenaGarcia_CurriculumVitae.pdf">Descarga CV</a>
