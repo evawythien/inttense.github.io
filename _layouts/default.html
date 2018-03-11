@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
 
-  <body>
+</head>
+
+<body>
     <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+        <div class="container">
+            <header class="masthead clearfix">
+                <div class="site-info">
+                    <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                    <p class="site-description">{{ site.description }}</p>
+                </div>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">BLOG</a>
-            <a href="{{ site.baseurl }}/about">ABOUT</a>
-          </nav>
-        </header>
-      </div>
+                <nav>
+                    <a href="{{ site.baseurl }}/">BLOG</a>
+                    <a href="{{ site.baseurl }}/about">ABOUT</a>
+                </nav>
+            </header>
+        </div>
     </div>
 
     <div id="main" role="main" class="container">
-      {{ content }}
+        {{ content }}
     </div>
 
     <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          <div id="logoFooter"><a href="#">inttense</a></div>
-          <div>
-            {% include svg-icons.html %}
-          </div>
-        </footer>
+        <div class="container">
+            <footer class="footer">
+                <div id="logoFooter"><a href="#">inttense</a></div>
+                <div>
+                    <a href="https://github.com/evawythien" target="_blank"><i class="fa fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/evadevena" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://codepen.io/evawythien/"><i class="fa fa-codepen"></i></a>
+                    <!--<a href="http://stackoverflow.com/users/6221495/eva-wythien" target="_blank"><i class="fa fa-stack-overflow"></i></a>-->
+                </div>
+            </footer>
 
-      </div>
+        </div>
     </div>
 
     {% include analytics.html %}
-  </body>
+</body>
 </html>
