@@ -3,14 +3,17 @@ layout: post
 title: Cambios en paralelo
 ---
 
-# Reglas
+Introduccion aqui. Introduccion aqui. Introduccion aqui. Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui. Introduccion aqui. Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui. Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.
+
+
+Reglas
 Nunca se debe de perder el servicio.
 Los despliegues requieren versiones en paralelo.
 Los despliegues deben de ser lo mas pequeños posibles.
 No se coordinan despliegues entre servicios.
 
 
-Escenario 1.
+# Escenario 1.
 Tenemos la aplicación A, que utiliza el método calculo1 y visualiza el resultado. Pero queremos cambiar calculo1 por calculo2 (mismo interface).
 Cáculo1 y calculo2 son complejos.
 

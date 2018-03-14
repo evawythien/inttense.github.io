@@ -1,11 +1,9 @@
-
 ---
 layout: page
 title: About me
-permalink: /about/
 ---
 
-
+Hola, mi nombre es Eva y soy full-stack developer.
 
 ### Contact me
 

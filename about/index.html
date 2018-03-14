@@ -1,103 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>About – inttense – Web Developer from Somewhere</title>
+---
+layout: default
+---
 
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
-    <meta name="description" content="Web Developer from Somewhere">
-    <meta property="og:description" content="Web Developer from Somewhere" />
-    <meta name="author" content="inttense" />
-    <meta property="og:title" content="About" />
-    <meta property="twitter:title" content="About" />
+<article class="page">
 
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="stylesheet" type="text/css" href="../cv.css" />
-    <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="javascipt/text" href="/bootstrap-3.3.7-dist/js/bootstrap.min.js" />
-    <link rel="alternate" type="application/rss+xml" title="inttense - Web Developer from Somewhere" href="/feed.xml" />
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+    <h1>{{ page.title }}</h1>
 
-</head>
-
-<body>
-    <div class="wrapper-masthead">
-        <div class="container">
-            <header class="masthead clearfix">
-                <div class="site-info">
-                    <h1 class="site-name"><a href="/">inttense</a></h1>
-                    <p class="site-description">Web Developer from Somewhere</p>
-                </div>
-
-                <nav>
-                    <a href="/">BLOG</a>
-                    <a href="/about">ABOUT</a>
-                </nav>
-            </header>
-        </div>
+    <div class="entry">
+        {{ content }}
     </div>
 
-    <div id="main" role="main" class="container">
-
-        <div class="work row R">
-            <div class="puesto"> .Net Full-stack Developer TechRules</div>
-            <div class="fechas">abr. de 2017 – actualidad  </div>
-            <div class="ubicacion">Valladolid</div>
-            <div class="descripcion">
-                Implementación y mantenimiento de software de gestión como full-stack developer, para entidades financieras.
-                Utilizando las técnologías: ASP.NET, MVC ASP.NET, C#, SQL, JavaScript, jQuery, CSS3, HTML5, Bootstrap. Además de la utilización de SVN como sistema de control de versiones y Scrum como metodología ágil para la gestión del flujo de trabajo.
-            </div>
-        </div>
-
-        <div class="work row">
-            <div class="puesto">Front-end Developer Cosmomedia</div>
-            <div class="fechas">nov. de 2016 – mar. de 2017  - 5 meses</div>
-            <div class="ubicacion">Valladolid</div>
-            <div class="descripcion">
-                Diseño e implementación de páginas web, utilizando las tecnologías de HTML5, CSS3, Bootstrap y jQuery.
-                Diseño de logotipos y edición fotográfica.
-            </div>
-        </div>
-
-        <div class="work row R">
-            <div class="puesto"> Prácticas .Net Full-stack developer CARTIF</div>
-            <div class="fechas">mar. de 2016 – jun. de 2016 - 4 meses</div>
-            <div class="ubicacion">Valladolid</div>
-            <div class="descripcion">
-                Diseño e implementación de interfaces de las aplicaciones internas usando las tecnologías de C#, Visual Studio, JavaScript, JQuery, bootstrap, HTML5, CSS3 y Dapper.
-                Rediseño e implementación de la base de datos en postgresql y creación de diagramas UML.
-            </div>
-        </div>
-
-        <div class="work row">
-            <div class="puesto"> PHP Back-end Developer - Bitban Technologies</div>
-            <div class="fechas">mar. de 2015 – sept. de 2015 - 7 meses</div>
-            <div class="ubicacion">Madrid</div>
-            <div class="descripcion">
-                Back-end Developer usando las tecnologías de PHP, JavaScript, Twig, AngularJS, JQuery, para la implementación y el mantenimiento del CMS propio además de diversos proyectos como eldiario.es, playgroundmag.net, elconfidencialdigital.com, elespañol.com...
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-83959930-1', 'auto');
-    ga('send', 'pageview', {
-        'page': '/about/',
-        'title': 'About'
-    });
-    </script>
-
-</body>
-</html>
+</article>
