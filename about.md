@@ -5,6 +5,10 @@ title: About me
 
 Hola, mi nombre es Eva y soy full-stack developer.
 
+Photography, design, wanderlust.
+
+
+
 ### ¡Contacta conmigo!
 
 [evadvgarcia@gmail.com](mailto:evadvgarcia@gmail.com)

@@ -12,7 +12,9 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <script id="dsq-count-scr" src="//http-int-tense-com.disqus.com/count.js" async></script>
-
+    {% if site.tags != "" %}
+      {% include collecttags.html %}
+    {% endif %}
 </head>
 
 <body>
