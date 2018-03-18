@@ -34,7 +34,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Rozha One', serif;
+    font-family: 'Roboto Mono', monospace;
     color: $darkerGray;
     font-weight: bold;
 
@@ -119,7 +119,7 @@ img {
 }
 
 .date {
-    font-style: italic;
+    font-family: 'Roboto Mono', monospace;
     color: $gray;
 }
 
@@ -194,7 +194,7 @@ img {
     margin: 0;
     color: $darkGray;
     cursor: pointer;
-    font-family: 'Rozha One', serif;
+    font-family: sofiapro-light;
     font-weight: 300;
     font-size: 35px;
     font-weight: bold;
@@ -282,6 +282,7 @@ nav {
     background-color: $white;
     height: 12%;
     width: 100%;
+    position: fixed;
     bottom: 0px;
 }
 
@@ -315,6 +316,16 @@ footer {
 
 .R {
     text-align: right;
+}
+
+.bicolorTitle {
+    color: #46494C;
+    font-size: 40px;
+}
+
+.bicolorTitlePrinc {
+    color: #3EBBB9;
+    font-size: 40px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

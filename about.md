@@ -1,16 +1,18 @@
 ---
 layout: page
-title: About me
+title:
 ---
+
+<span class="bicolorTitlePrinc">about</span><span class="bicolorTitle">me</span>
 
 Hola, mi nombre es Eva y soy full-stack developer.
 
 Photography, design, wanderlust.
 
-
+<span class="bicolorTitlePrinc">tech</span><span class="bicolorTitle">things</span>
 
 ### ¡Contacta conmigo!
 
-[evadvgarcia@gmail.com](mailto:evadvgarcia@gmail.com)
+[evadvgarcia [at] gmail.com](mailto:evadvgarcia@gmail.com)
 
 <a href="EvaMariadeVenaGarcia_CurriculumVitae.pdf" download="EvaMariadeVenaGarcia_CurriculumVitae.pdf">Descarga CV</a>
