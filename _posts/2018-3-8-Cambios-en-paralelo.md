@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cambios en paralelo
+title: Cambios en paralelo.
 ---
 
 Introduccion aqui. Introduccion aqui. Introduccion aqui. Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui. Introduccion aqui. Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui. Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.
