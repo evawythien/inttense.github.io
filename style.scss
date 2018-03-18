@@ -318,14 +318,27 @@ footer {
     text-align: right;
 }
 
+.bicolorHead {
+    color: #46494C;
+    font-weight: bold;
+}
+
+.bicolorHeadPrinc {
+    color: #3EBBB9;
+    font-weight: bold;
+}
+
+
 .bicolorTitle {
     color: #46494C;
-    font-size: 40px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .bicolorTitlePrinc {
     color: #3EBBB9;
-    font-size: 40px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

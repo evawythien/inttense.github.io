@@ -11,7 +11,7 @@ Photography, design, wanderlust.
 
 <span class="bicolorTitlePrinc">tech</span><span class="bicolorTitle">things</span>
 
-Actualmente estoy trabajando como desarooladora full-stack en Schibsted Spain, la comp
+Actualmente estoy trabajando como desarooladora full-stack en 
 
 Anteriormente, estuve trabajando como diseñadora y maquetadora web.
 
