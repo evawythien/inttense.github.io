@@ -11,8 +11,12 @@ Photography, design, wanderlust.
 
 <span class="bicolorTitlePrinc">tech</span><span class="bicolorTitle">things</span>
 
-### ¡Contacta conmigo!
+Actualmente estoy trabajando como desarooladora full-stack en Schibsted Spain, la comp
 
-[evadvgarcia [at] gmail.com](mailto:evadvgarcia@gmail.com)
+Anteriormente, estuve trabajando como diseñadora y maquetadora web.
+
+<span class="bicolorTitlePrinc">contact</span><span class="bicolorTitle">me</span>
+
+Escríbirme a: [evadvgarcia [at] gmail.com](mailto:evadvgarcia@gmail.com)
 
 <a href="EvaMariadeVenaGarcia_CurriculumVitae.pdf" download="EvaMariadeVenaGarcia_CurriculumVitae.pdf">Descarga CV</a>
