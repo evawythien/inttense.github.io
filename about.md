@@ -9,11 +9,15 @@ Hola, mi nombre es Eva y soy full-stack developer.
 
 Photography, design, wanderlust.
 
+
+
 <span class="bicolorTitlePrinc">tech</span><span class="bicolorTitle">things</span>
 
-Actualmente estoy trabajando como desarooladora full-stack en 
+Actualmente estoy trabajando como desarooladora full-stack en
 
 Anteriormente, estuve trabajando como diseñadora y maquetadora web.
+
+
 
 <span class="bicolorTitlePrinc">contact</span><span class="bicolorTitle">me</span>
 

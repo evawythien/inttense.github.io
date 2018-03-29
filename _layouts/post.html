@@ -14,16 +14,16 @@ comments: true
     <div class="entry">
         {{ content }}
     </div>
-{% include social-share.html %}
-</article>
-<div class="">
-    <span>
+
+    <div class="postTags">
         {% for tag in page.tags %}
         <span class=""><a href="/tag/{{ tag_name }}">&lt;/{{ tag }}&gt;</a></span>
         {% endfor %}
-    </span>
-</div>
+    </div>
 
+    {% include social-share.html %}
+
+</article>
 
 {% include analytics.html %}
 

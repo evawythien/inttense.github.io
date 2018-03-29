@@ -199,7 +199,7 @@ img {
     cursor: pointer;
     font-family: sofiapro-light;
     font-weight: 300;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bold;
     letter-spacing: 0.2em;
 }
@@ -361,6 +361,18 @@ footer {
 
 .shareButtons .fa {
     padding: 20px;
+}
+
+.postTags span {
+    background-color: $generalColor;
+    color : black;
+    margin: 20px;
+    padding: 5px;
+}
+
+.postTags span a {
+    font-weight: bold;
+    color : black;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
