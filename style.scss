@@ -26,9 +26,14 @@ body {
     color: $darkGray;
 }
 
+p::selection {
+    background: $generalColor;
+    color: black;
+}
+
 .container {
     margin: 0 auto;
-    max-width: 740px;
+    max-width: 800px;
     padding: 0 10px;
     width: 100%;
 }
@@ -156,7 +161,7 @@ img {
 
 .masthead {
     padding: 20px 0px 0px 0px;
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #46494C;
 
     @include mobile {
         text-align: center;
@@ -241,6 +246,9 @@ nav {
 //
 // .main
 //
+#main {
+    margin-bottom: 125px;
+}
 
 .posts > .post {
     padding-bottom: 2em;
@@ -268,6 +276,8 @@ nav {
     .read-more {
         text-transform: uppercase;
         font-size: 15px;
+        border: 2px solid;
+        padding: 10px;
     }
 
     .read-more:hover {
@@ -280,10 +290,9 @@ nav {
 .wrapper-footer {
     margin-top: 50px;
     background-color: $white;
-    height: 12%;
-    width: 100%;
-    position: fixed;
     bottom: 0px;
+    position: fixed;
+    width: 100%;
 }
 
 .fa {
@@ -291,8 +300,7 @@ nav {
 }
 
 hr {
-    transform: rotate(-3deg);
-    color: $black;
+    color:  #46494C;
     border: 1px solid;
 }
 
@@ -327,7 +335,6 @@ footer {
     color: #3EBBB9;
     font-weight: bold;
 }
-
 
 .bicolorTitle {
     color: #46494C;

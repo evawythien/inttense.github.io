@@ -16,13 +16,12 @@ comments: true
     </div>
 
 </article>
-
-<span>
-    {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-    {% endfor %}
-</span>
-
+<div class="">
+    <span>
+        {% for tag in page.tags %}
+        <div class=""><a href="/tag/{{ tag_name }}">&lt;/{{ tag }}&gt;</a></div>
+        {% endfor %}
+    </span>
+</div>
 
 <div id="disqus_thread"></div>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cambios en paralelo.
+tags: design Eva programacion presentacion
 ---
 
 Introduccion aqui. Introduccion aqui. Introduccion aqui. Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui. Introduccion aqui. Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui. Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.Introduccion aqui.

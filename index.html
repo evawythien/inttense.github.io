@@ -3,20 +3,37 @@ layout: default
 ---
 
 <div id="main" role="main" class="container">
-    <div class="posts">
-        {% for post in site.posts limit:10 %}
-        <article class="post">
+    <div class="col-md-9">
+        <div class="posts">
+            {% for post in site.posts limit:10 %}
+            <article class="post">
 
-            <h1 class=""><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-            <div class="R postDate">{{ post.date | date: "%B %e, %Y" }}</div>
-            <div class="entry">
-                {{ post.excerpt }}
-            </div>
+                <h1 class=""><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+                <div class="R postDate">{{ post.date | date: "%B %e, %Y" }}</div>
+                <div class="entry">
+                    {{ post.excerpt }}
+                </div>
 
-            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-        </article>
-        <hr/>
+                <div class="R"><a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a></div>
+            </article>
+            <hr/>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-md-3">
+        <h1 class=""><a href=""> &lt;/Tags&gt;</a></h1>
+            {% capture temptags %}
+        {% for tag in site.tags %}
+        {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
         {% endfor %}
+        {% endcapture %}
+        {% assign sortedtemptags = temptags | split:' ' | sort | reverse %}
+        {% for temptag in sortedtemptags %}
+        {% assign tagitems = temptag | split: '#' %}
+        {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
+        <a href="/tag/{{ tagname }}"><code class="highligher-rouge"><nobr> &lt;/{{ tagname }}&gt;</nobr></code></a>
+        {% endfor %}
+
     </div>
 </div>
 

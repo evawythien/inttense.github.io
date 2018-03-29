@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Hello World!
-tags: design
+tags: design Evaaaa programacion presentacion
+comments: true
 ---
 
 My name is Eva. Currently I am working as a software developer and studying computer science.
