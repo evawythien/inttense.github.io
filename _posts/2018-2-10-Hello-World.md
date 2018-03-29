@@ -5,9 +5,10 @@ tags: design Evaaaa programacion presentacion
 comments: true
 ---
 
-My name is Eva. Currently I am working as a software developer and studying computer science.
+¡Hola! Me llamo Eva y soy desarrolladora de software. Me considero una persona constante, trabajadora e ilusionada por aprender y evolucionar, por eso intento compaginar el mundo de los estudios con el mundo laboral.
+Inicialmente estudié el ciclo de desarrollo de aplicaciones multiplataforma y el ciclo de desarrollo de aplicaciones web. Actualmente estoy empezando la carrera de ingeniería informática por la UNED.
+He trabajado como desarrolladora backend programando para periódicos digitales en Bitban Technologies, un tiempo después realicé las prácticas del ciclo desarrollo de aplicaciones multiplataforma en Cartif desarrollando y diseñando una parte de sus aplicaciones internas y su base de datos.
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
 
 
 ### About the site.

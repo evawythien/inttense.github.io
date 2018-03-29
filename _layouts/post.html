@@ -14,12 +14,12 @@ comments: true
     <div class="entry">
         {{ content }}
     </div>
-
+{% include socialShare.html %}
 </article>
 <div class="">
     <span>
         {% for tag in page.tags %}
-        <div class=""><a href="/tag/{{ tag_name }}">&lt;/{{ tag }}&gt;</a></div>
+        <span class=""><a href="/tag/{{ tag_name }}">&lt;/{{ tag }}&gt;</a></span>
         {% endfor %}
     </span>
 </div>
