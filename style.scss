@@ -80,9 +80,7 @@ a {
     color: $generalColor;
     text-decoration: none;
     cursor: pointer;
-    &:hover, &:active {
-        background-color: $generalColor;
-    }
+
 }
 
 ul, ol {
@@ -289,7 +287,7 @@ nav {
 
 .wrapper-footer {
     margin-top: 50px;
-    background-color: $white;
+    background-color: $generalColor;
     bottom: 0px;
     position: fixed;
     width: 100%;
@@ -297,6 +295,9 @@ nav {
 
 .fa {
     color: $black;
+    &:hover, &:active {
+        color: $generalColor;
+    }
 }
 
 hr {
@@ -326,6 +327,10 @@ footer {
     text-align: right;
 }
 
+.C {
+    text-align: center;
+}
+
 .bicolorHead {
     color: #46494C;
     font-weight: bold;
@@ -346,6 +351,16 @@ footer {
     color: #3EBBB9;
     font-size: 25px;
     font-weight: bold;
+}
+
+.shareButtons {
+    padding: 15px;
+    border: 6px solid $generalColor;
+    margin: 20px;
+}
+
+.shareButtons .fa {
+    padding: 20px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

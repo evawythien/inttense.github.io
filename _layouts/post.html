@@ -14,7 +14,7 @@ comments: true
     <div class="entry">
         {{ content }}
     </div>
-{% include socialShare.html %}
+{% include social-share.html %}
 </article>
 <div class="">
     <span>
@@ -24,4 +24,16 @@ comments: true
     </span>
 </div>
 
+
+{% include analytics.html %}
+
+<script id="dsq-count-scr" src="//http-int-tense-com.disqus.com/count.js" async></script>
+
 <div id="disqus_thread"></div>
+<script>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://http-int-tense-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);})();
+</script>
