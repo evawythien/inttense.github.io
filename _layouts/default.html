@@ -18,37 +18,38 @@
 </head>
 
 <body>
+    
     <div class="wrapper-masthead">
         <div class="container">
             <header class="masthead clearfix">
                 <div class="site-info">
                     <h1 class="site-name"><a href="{{ site.baseurl }}/"><span class="bicolorHead">int</span><span class="bicolorHeadPrinc">tense</span></a></h1>
                 </div>
-                <nav>
-                    <a href="{{ site.baseurl }}/">BLOG</a> /
-                    <a href="{{ site.baseurl }}/projects">PROJECTS</a> /
-                    <a href="{{ site.baseurl }}/about">ABOUT</a> /
-                </nav>
-            </header>
+                <div class="menu R">
+                    <h3><a href="{{ site.baseurl }}/">BLOG</a> /
+                        <a href="{{ site.baseurl }}/projects">PROJECTS</a> /
+                        <a href="{{ site.baseurl }}/about">ABOUT</a> /</h3>
+                    </div>
+                </header>
+            </div>
         </div>
-    </div>
 
-    <div id="main" role="main" class="container">
-        {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-        <div class="container">
-            <footer class="footer">
-                <div id="logoFooter"><a href="#">inttense</a></div>
-                <div>
-                    <a href="https://github.com/evawythien" target="_blank"><i class="fa fa-github-alt"></i></a>
-                    <a href="https://www.linkedin.com/in/evadevena" target="_blank"><i class="fa fa-linkedin"></i></a>
-                    <a href="https://codepen.io/evawythien/"><i class="fa fa-codepen"></i></a>
-                </div>
-            </footer>
+        <div id="main" role="main" class="container">
+            {{ content }}
         </div>
-    </div>
 
-</body>
-</html>
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    <div id="logoFooter"><a href="#">inttense</a></div>
+                    <div>
+                        <a href="https://github.com/evawythien" target="_blank"><i class="fa fa-github-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/evadevena" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://codepen.io/evawythien/" target="_blank"><i class="fa fa-codepen"></i></a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+    </body>
+    </html>

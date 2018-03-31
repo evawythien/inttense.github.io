@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World!
-tags: design Evaaaa programacion presentacion
+tags: design presentacion
 comments: true
 ---
 

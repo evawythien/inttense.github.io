@@ -5,7 +5,7 @@ comments: true
 
 <article class="post">
 
-    <h1>{{ page.title }}</h1>
+    <h1>{{ page.title }} <span>_</span></h1>
 
     <div class="date R">
         Written on {{ page.date | date: "%B %e, %Y" }}
@@ -17,7 +17,7 @@ comments: true
 
     <div class="postTags">
         {% for tag in page.tags %}
-        <span class=""><a href="/tag/{{ tag_name }}">&lt;/{{ tag }}&gt;</a></span>
+        <span class=""><a href="/tag/{{ tag }}">&lt;/{{ tag }}&gt;</a></span>
         {% endfor %}
     </div>
 

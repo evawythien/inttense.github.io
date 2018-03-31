@@ -1,6 +1,6 @@
 ---
 layout: post
 title: Share
-tags: design Eva programacion presentacion
+tags: design jekyll blog
 comments: true
 ---
