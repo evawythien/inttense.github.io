@@ -13,11 +13,11 @@ He trabajado como programadora backend desarrollando para periódicos digitales 
 
 
 
-### About the site.
+### Sobre este sitio
 
 In case you were wondering, this site is:
 
 * Diseñado y desarrollado en Valladolid.
-* Tacleado en Atom.
-* Construido con Jekyll.
+* Tecleado en Atom.
+* Construido con <a href='https://jekyllrb.com/'>Jekyll.</a>
 * Hosteado en GitHub Pages.

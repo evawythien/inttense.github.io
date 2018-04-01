@@ -26,7 +26,7 @@ body {
     color: $darkGray;
 }
 
-p::selection {
+p::selection, li::selection, .entry h3::selection {
     background: $generalColor;
     color: black;
 }
@@ -81,7 +81,6 @@ a {
     color: $generalColor;
     text-decoration: none;
     cursor: pointer;
-
 }
 
 ul, ol {
@@ -302,6 +301,11 @@ nav {
     }
 }
 
+.fa:hover {
+
+    animation: temblor 0.5s infinite;
+}
+
 .fa-cog {
     animation: rotacion 5s infinite;
     color: $generalColor;
@@ -399,6 +403,10 @@ footer {
     padding: 50px;
 }
 
+#share {
+    text-decoration: underline wavy $generalColor;
+}
+
 /* ANIMACIONES */
 
 @keyframes parpadeo {
@@ -430,6 +438,18 @@ footer {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
         rotation: 360deg;
+    }
+}
+
+@keyframes temblor{
+    0%  {
+        -webkit-transform:rotateZ(-5deg);
+    }
+    50% {
+        -webkit-transform:rotateZ( 0deg) scale(.8);
+    }
+    100% {
+        -webkit-transform:rotateZ( 5deg);
     }
 }
 
