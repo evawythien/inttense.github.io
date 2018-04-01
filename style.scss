@@ -301,6 +301,11 @@ nav {
     }
 }
 
+.fa-cog {
+    animation: rotacion 5s infinite;
+    color: $generalColor;
+}
+
 hr {
     height: 6px;
     background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
@@ -339,7 +344,7 @@ footer {
 }
 
 .bicolorHeadPrinc {
-    color: #3EBBB9;
+    color: $generalColor;
     font-weight: bold;
 }
 
@@ -350,7 +355,7 @@ footer {
 }
 
 .bicolorTitlePrinc {
-    color: #3EBBB9;
+    color: $generalColor;
     font-size: 25px;
     font-weight: bold;
 }
@@ -388,6 +393,12 @@ footer {
     animation: parpadeo 1s infinite;
 }
 
+#underConstruction {
+    padding: 50px;
+}
+
+/* ANIMACIONES */
+
 @keyframes parpadeo {
     0% {
         opacity: 0;
@@ -397,7 +408,30 @@ footer {
     }
 }
 
-/**/
+@keyframes rotacion {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        rotation: 0deg;
+    }
+    25% {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        rotation: 90deg;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        rotation: 180deg;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        rotation: 360deg;
+    }
+}
+
+/* ANIMACIONES */
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
