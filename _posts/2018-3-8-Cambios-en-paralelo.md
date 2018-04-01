@@ -5,14 +5,13 @@ tags: design Eva programacion presentacion
 comments: true
 ---
 
-Hace unas semanas estuve en el ~WeCode~ en el taller que impartió <a href='http://www.eferro.net/' target='_blank'>eferro</a> sobre cambios paralelos.Este consistía en
+Hace unas semanas estuve en el ~WeCode~ en el taller que impartió <a href='http://www.eferro.net/' target='_blank'>eferro</a> sobre cambios paralelos. Este consistía en que nos proponia una serie de casos que debíamos solucionar siguiendo las siguientes reglas:
 
-
-Reglas
--Nunca se debe de perder el servicio.
-Los despliegues requieren versiones en paralelo.
-Los despliegues deben de ser lo mas pequeños posibles.
-No se coordinan despliegues entre servicios.
+#### Reglas
+* Nunca se debe de perder el servicio.
+* Los despliegues requieren versiones en paralelo.
+* Los despliegues deben de ser lo mas pequeños posibles.
+* No se coordinan despliegues entre servicios.
 
 
 ### Escenario 1.
@@ -21,11 +20,11 @@ Cáculo1 y calculo2 son complejos.
 
 
 Ejemplo solución L1:
-[app1 con calc1 + calc2 (sin conectar)]
-[app1 -> abst1 -> calc1]
-app1 -> abst1 -> calc1 y calc2. usa calc1 pero hace log si calc1 != calc2
-[app1->abst1->calc2]
-app1->calc2
+1. [app1 con calc1 + calc2 (sin conectar)]
+2. [app1 -> abst1 -> calc1]
+3. app1 -> abst1 -> calc1 y calc2. usa calc1 pero hace log si calc1 != calc2
+4. [app1->abst1->calc2]
+5. app1->calc2
 
 
 ### Escenario L2:
@@ -63,7 +62,7 @@ Cambio de tecnología persistencia para entidad User, resto de entidades solo se
 User no se usa en joins.
 
 
-tras realizar de esto llegamos a la conclusión que para realizar cambios de la persistencia de nuestro software debemos de tener una serie de fastores en cuenta:
+Tras realizar estos ejercicios llegamos a la conclusión que para realizar cambios de la persistencia de nuestro software debemos de tener una serie de factores en cuenta:
 
 Como el tiempo de migración, el volumen de datos, el TTL de datos, las operaciones idempotentes, los procesos re-arrancables, los scrips de validación de datos.
 

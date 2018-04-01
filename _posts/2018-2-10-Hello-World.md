@@ -17,10 +17,7 @@ He trabajado como programadora backend desarrollando para periódicos digitales 
 
 In case you were wondering, this site is:
 
-**Diseñado y desaroolado en Valladolid.
-**Tacleado en Atom.
-**Construido con Jekyll.
-**Hosteado en GitHub Pages.
-
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
+* Diseñado y desarrollado en Valladolid.
+* Tacleado en Atom.
+* Construido con Jekyll.
+* Hosteado en GitHub Pages.

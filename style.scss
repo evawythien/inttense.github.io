@@ -259,6 +259,7 @@ nav {
 }
 
 .post {
+    padding: 30px;
     blockquote {
         margin: 1.8em .8em;
         border-left: 2px solid $gray;
@@ -363,7 +364,8 @@ footer {
 .shareButtons {
     padding: 15px;
     border: 6px solid $generalColor;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .shareButtons .fa {
