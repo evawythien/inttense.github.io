@@ -379,6 +379,25 @@ footer {
 
 /**/
 
+#separator {
+    width: 100%;
+}
+
+#titlePost::after {
+    content:'_';
+    animation: parpadeo 1s infinite;
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/**/
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
