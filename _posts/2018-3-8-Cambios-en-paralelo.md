@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cambios en paralelo
-tags: design Eva programacion presentacion
+tags: 
 comments: true
 ---
 
