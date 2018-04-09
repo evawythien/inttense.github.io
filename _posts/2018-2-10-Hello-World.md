@@ -5,12 +5,17 @@ tags:
 comments: true
 ---
 
-¡Hola! Me llamo Eva y soy desarrolladora de software. Me considero una persona constante, trabajadora e ilusionada por aprender y evolucionar, por eso intento compaginar el mundo de los estudios con el mundo laboral. Ahora he decidido abrir este blog para poder compartir poco a poco las cosas que voy aprendiento.
+### ¡Hola!
+Me llamo Eva y soy desarrolladora de software.
+
+Me considero una persona constante, trabajadora e ilusionada por aprender y evolucionar, por eso intento compaginar el mundo de los estudios con el mundo laboral. Ahora he decidido abrir este blog para poder compartir poco a poco las cosas que voy aprendiendo.
+
 Inicialmente estudié el ciclo de desarrollo de aplicaciones multiplataforma y el ciclo de desarrollo de aplicaciones web. Actualmente estoy estudiando la carrera de ingeniería informática por la UNED.
 
-Ahora estoy trabajando como desarrolladora full-stack con tecnologías .Net. También he trabajado como programadora backend desarrollando para periódicos digitales en Bitban Technologies, un tiempo después realicé las prácticas del ciclo desarrollo de aplicaciones multiplataforma en Cartif desarrollando y diseñando una parte de sus aplicaciones internas y su base de datos. Además también he trabajado como diseñadora y maquetadora de páginas web para pymes.
+Ahora estoy trabajando como desarrolladora full-stack con tecnologías .Net.
+También he trabajado como programadora backend desarrollando para periódicos digitales además como diseñadora y maquetadora de páginas web.
 
-También puedes encontrarme en:
+### También puedes encontrarme en:
 <div id="socialPresentation">
 <div class="button one">
     <a href="https://www.instagram.com/evawythien/" target="_blank">
