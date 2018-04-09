@@ -1,17 +1,46 @@
 ---
 layout: post
 title: Hello World!
-tags: design presentacion
+tags:
 comments: true
 ---
 
-¡Hola! Me llamo Eva y soy desarrolladora de software. Me considero una persona constante, trabajadora e ilusionada por aprender y evolucionar, por eso intento compaginar el mundo de los estudios con el mundo laboral.
-
+¡Hola! Me llamo Eva y soy desarrolladora de software. Me considero una persona constante, trabajadora e ilusionada por aprender y evolucionar, por eso intento compaginar el mundo de los estudios con el mundo laboral. Ahora he decidido abrir este blog para poder compartir poco a poco las cosas que voy aprendiento.
 Inicialmente estudié el ciclo de desarrollo de aplicaciones multiplataforma y el ciclo de desarrollo de aplicaciones web. Actualmente estoy estudiando la carrera de ingeniería informática por la UNED.
 
-He trabajado como programadora backend desarrollando para periódicos digitales en Bitban Technologies, un tiempo después realicé las prácticas del ciclo desarrollo de aplicaciones multiplataforma en Cartif desarrollando y diseñando una parte de sus aplicaciones internas y su base de datos.
+Ahora estoy trabajando como desarrolladora full-stack con tecnologías .Net. También he trabajado como programadora backend desarrollando para periódicos digitales en Bitban Technologies, un tiempo después realicé las prácticas del ciclo desarrollo de aplicaciones multiplataforma en Cartif desarrollando y diseñando una parte de sus aplicaciones internas y su base de datos. Además también he trabajado como diseñadora y maquetadora de páginas web para pymes.
 
+También puedes encontrarme en:
+<div id="socialPresentation">
+<div class="button one">
+    <a href="https://www.instagram.com/evawythien/" target="_blank">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+    <span class="tooltip L">Instagram!</span>    
+  </div>
 
+  <div class="button one">    
+    <a href="https://www.linkedin.com/in/evadevena" target="_blank">
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </a>
+    <span class="tooltip T">Linkedin!</span>
+  </div>
+
+  <div class="button one">
+    <span class="tooltip B">Github!</span>
+    <a href="https://github.com/evawythien" target="_blank">
+      <i class="fa fa-github-alt" aria-hidden="true"></i>      
+    </a>
+  </div>
+
+  <div class="button one">
+    <a href="https://codepen.io/evawythien" target="_blank">
+      <i class="fa fa-codepen" aria-hidden="true"></i>
+    </a>
+    <span class="tooltip R">Codepen!</span>    
+  </div>
+
+</div>
 
 ### Sobre este sitio
 

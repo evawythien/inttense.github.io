@@ -1,0 +1,144 @@
+/* COLOR DEFINITION */
+$detail: #50514F;
+
+#socialPresentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+  margin: 30px;
+  .fa {
+    font-size: 36px;
+  }
+}
+
+.text {
+	color:  $detail;
+	position: absolute;
+	font-size: 30px;
+	vertical-align: middle;
+	width: 50px;
+  height: 50px;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  display: inline-block;
+}
+
+.fa:hover {
+   opacity: 0.5;;
+}
+
+.button:hover .tooltip {
+  visibility: visible;
+  width: 120px;
+  color: $detail;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+}
+
+/* POSITIONS */
+.L {
+    top: 3px;
+    right: 135%;
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 100%; /* To the right of the tooltip */
+      margin-top: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent transparent $generalColor;
+  }
+}
+
+.R {
+  top: 5px;
+  left: 135%;
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent $generalColor transparent transparent;
+  }
+}
+
+.T {
+  margin-left: -70px;
+  bottom: 130%;
+  left: 50%;
+  animation: swing 3s ease;
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: $generalColor transparent transparent transparent;
+
+  }
+}
+
+.B {
+  width: 120px;
+  top: 135%;
+  left: 50%;
+  margin-left: -60px;
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent $generalColor transparent;
+  }
+}
+
+
+/* STYLE COLOR */
+.one {
+  color: $generalColor;
+  & a {
+    text-decoration: none;
+    color: $generalColor;
+  }
+  &:hover .tooltip {
+    background-color: $generalColor;
+  }
+}
+
+
+
+/* ANIMACIONES */
+
+@keyframes swing {
+  0% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+
+  100% {
+    -webkit-transform: translateX(10);
+    transform: translateX(10);
+  }
+}
