@@ -5,8 +5,7 @@ tags:
 comments: true
 ---
 
-### ¡Hola!
-Me llamo Eva y soy desarrolladora de software.
+¡Hola! Me llamo Eva y soy desarrolladora de software.
 
 Me considero una persona constante, trabajadora e ilusionada por aprender y evolucionar, por eso intento compaginar el mundo de los estudios con el mundo laboral. Ahora he decidido abrir este blog para poder compartir poco a poco las cosas que voy aprendiendo.
 

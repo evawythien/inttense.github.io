@@ -15,6 +15,7 @@ comments: true
             {{ content }}
         </div>
     </div>
+    
     <div class="postTags">
         {% for tag in page.tags %}
         <span class=""><a href="/tag/{{ tag }}">&lt;/{{ tag }}&gt;</a></span>
@@ -26,7 +27,6 @@ comments: true
 </article>
 
 {% include analytics.html %}
-
 
 <script id="dsq-count-scr" src="//http-int-tense-com.disqus.com/count.js" async></script>
 

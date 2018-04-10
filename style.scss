@@ -42,7 +42,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Mono', monospace;
     color: $darkerGray;
     font-weight: bold;
-
     line-height: 1.7;
     margin: 1em 0 15px;
     padding: 0;
@@ -273,9 +272,11 @@ nav {
     }
 
     .read-more {
-        text-transform: uppercase;
+        background-color: #4db8b8;
+        color: black;
         font-size: 15px;
-        border: 2px solid;
+        font-weight: bold;
+        text-transform: uppercase;
         padding: 10px;
     }
 
@@ -413,6 +414,27 @@ footer {
     border-radius: 30px;
 }
 
+#tagContainer {
+    padding: 15px;
+    /*border: 6px solid $generalColor;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.underline-magical {
+    background-image: linear-gradient(120deg, $generalColor 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+    &:hover {
+        background-size: 100% 100%;
+        color: white;
+    }
+}
+
+
 /* ANIMACIONES */
 
 @keyframes parpadeo {
@@ -460,6 +482,7 @@ footer {
 }
 
 /* ANIMACIONES */
+
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
