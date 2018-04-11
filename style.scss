@@ -260,10 +260,9 @@ nav {
     padding: 30px;
     blockquote {
         margin: 1.8em .8em;
-        border-left: 2px solid $gray;
+        border-left: 4px solid  $generalColor;
         padding: 0.1em 1em;
         color: $gray;
-        font-size: 22px;
         font-style: italic;
     }
 
@@ -272,7 +271,7 @@ nav {
     }
 
     .read-more {
-        background-color: #4db8b8;
+        background-color: $generalColor;
         color: black;
         font-size: 15px;
         font-weight: bold;
@@ -332,8 +331,8 @@ footer {
     color: $black;
     border-bottom: 1px solid #333;
     padding: 0 0 5px 0;
-    letter-spacing: 0.3em
-    //font-weight: bold;
+    letter-spacing: 0.3em;
+    font-weight: bold;
 }
 
 .R {
@@ -366,11 +365,10 @@ footer {
     font-weight: bold;
 }
 
-.shareButtons {
-    padding: 15px;
+.shareButtons, .postTags  {
     border: 6px solid $generalColor;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0 0 20px;
+    padding: 15px;
 }
 
 .shareButtons .fa {
@@ -378,7 +376,7 @@ footer {
 }
 
 .postTags span {
-    background-color: $generalColor;
+    /*background-color: $generalColor;*/
     color : black;
     margin: 20px;
     padding: 5px;
@@ -409,14 +407,24 @@ footer {
 }
 
 #cvContent {
+    border: 5px solid $generalColor;
+    font-weight: bold;
+    font-size: 18px;
     padding: 20px;
-    border: 3px solid $generalColor;
-    border-radius: 30px;
+    letter-spacing: 0.3em;
+    &:hover {
+        background-color: $generalColor;
+        border: 5px solid #fff;
+        padding: 20px;
+        color: black;
+    }
+    &:hover a {
+        color: #fff;
+    }
 }
 
 #tagContainer {
     padding: 15px;
-    /*border: 6px solid $generalColor;*/
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;

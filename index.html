@@ -60,8 +60,8 @@ layout: default
     </div>
 </div>
 
-<div id="tagContainer" class="col-md-3">
-    <!--<h1 class=""><a href=""> &lt;/Tags&gt;</a></h1>-->
+<div id="tagContainer" class="col-md-3 R">
+    <h5> &lt;/Tags&gt;:<h5>
     {% capture temptags %}
     {% for tag in site.tags %}
     {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
@@ -71,7 +71,7 @@ layout: default
     {% for temptag in sortedtemptags %}
     {% assign tagitems = temptag | split: '#' %}
     {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
-    <a href="/tag/{{ tagname }}"><code class="highligher-rouge underline-magical"><nobr> &lt;/{{ tagname }}&gt;</nobr></code></a>
+    <a href="/tag/{{ tagname }}"><nobr> &lt;/{{ tagname }}&gt;</nobr></a> <br/>
     {% endfor %}
 
 </div>

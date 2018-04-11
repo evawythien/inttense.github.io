@@ -7,36 +7,36 @@ comments: true
 
 Hace unas semanas estuve en el ~WeCode~ en el taller que impartió <a href='http://www.eferro.net/' target='_blank'>eferro</a> sobre cambios paralelos. Este consistía en que nos proponia una serie de casos que debíamos solucionar siguiendo las siguientes reglas:
 
-#### Reglas
+### Reglas
 * Nunca se debe de perder el servicio.
 * Los despliegues requieren versiones en paralelo.
 * Los despliegues deben de ser lo mas pequeños posibles.
 * No se coordinan despliegues entre servicios.
 
 
-### Escenario 1.
+#### Escenario 1.
 Tenemos la aplicación A, que utiliza el método calculo1 y visualiza el resultado. Pero queremos cambiar calculo1 por calculo2 (mismo interface).
 Cáculo1 y calculo2 son complejos.
 
 Ejemplo solución L1:
 1. Añadimos a la applicación calculo2, pero no realizamos ninguna llamada.
 2. [app1 -> abst1 -> calc1]
-3. app1 -> abst1 -> calc1 y calc2. usa calc1 pero hace log si calc1 != calc2
+3. Ejecutamos calculo1 y calculo2. Usamos calculo1, pero loggeamos si calculo1 != calculo2.
 4. [app1->abst1->calc2]
-5. app1->calc2
+5. Utilizamos solo calculo2.
 
 
-### Escenario L2:
+#### Escenario L2:
 Tenemos la aplicación A, que usa calculo1 y visualiza el resultado. Queremos cambiar calculo1 por calculo2 (mismo interface). calculo1 y calculo2 complejos. calculo1 ejecuta sideeffect y necesitamos mantenerlo. sideeffect no se puede ejecutar dos veces.
 
 
 Solución:
 1. Añadimos a la applicación calculo2, pero no realizamos ninguna llamada.
-2. abstraemos sideeffect fuera de los métodos.
+2. Abstraemos sideeffect fuera de los métodos.
 3. [app1 -> abst1 -> calc1]
-4. app1 -> abst1 -> calc1 y calc2. usa calc1 pero hace log si calc1 != calc2
+4.Ejecutamos calculo1 y calculo2. Usamos calculo1, pero loggeamos si calculo1 != calculo2.
 5. [app1->abst1->calc2]
-6. app1->calc2
+6. Utilizamos solo calculo2.
 
 ### Escenario PE1:
 Tenemos la applicación A, que usa calculo1 y visualiza el resultado. Queremos mejorar su rendimiento.
@@ -51,17 +51,18 @@ validar datos
 medir performance
 
 
-### Escenario P1:
+#### Escenario P1:
 Queremos realizar un cambio en el nombre del atributo member_status a membership en la entidad user (persistencia en tabla BD relacional).
 
 NOTA: El atributo no tiene relación con otras tablas. El cambio hay que realizarlo en el código y en la columna.
 
 Solución:
-1.
-2.
-3.
+1. Creamos el nuevo atributo membership y empezamos también a insertar datos. Pero seguimos leyendo de member_status.
+2. Introducimos lógica, si membership está vacío leermos de member_status.
+3. Pasamos los datos que quedan al nuevo campo.
+4. Empezamos a leer solo de membership.
 
-### Escenario P2:
+#### Escenario P2:
 
 Transformación del atributo address a address y country en la entidad User. Anteriormente se escribía la dirección con el formarto "calle, ciudad".
 La persistencia se realiza en una tabla de base de datos relacional.
@@ -75,7 +76,7 @@ Solución:
 4. Actualizar los datos antiguos al nuevo formato.
 5. Eliminamos la lógica del código.
 
-### Escenario P3:
+#### Escenario P3:
 
 Cambio de tecnología de persistencia para entidad User, el resto de entidades solo se relacionan con user por el id.
 NOTA: La entidad User no se usa en joins.
@@ -89,7 +90,7 @@ Suponemos por ejemplo que el cambio se va a hacer de una base de datos Sql, a No
 
 
 > Tras realizar estos ejercicios llegamos a la conclusión que para realizar cambios de la persistencia de nuestro software debemos de tener una serie de factores en cuenta:
-Como el tiempo de migración, el volumen de datos, el TTL de datos, las operaciones idempotentes, los procesos re-arrancables, los scrips de validación de datos.
+Como el tiempo de migración, el volumen de datos, el TTL de datos, las operaciones idempotentes, los procesos re-arrancables, los scrips de validación de datos..
 
 
 ### Escenario C1
@@ -100,7 +101,7 @@ Solución:
 2. El servicio B, solo lee el campo field_new.
 3. El servicio A, solo envía el campo field_new.
 
-### Escenario C2
+#### Escenario C2
 El servicio A envía, usando una cola multicast,el mensaje1 con field_old al servicio B, C y D, field_old debe cambiar a field_new.
 
 Solución:
@@ -110,5 +111,5 @@ Solución:
 4. Hacemos que el servicio D solamente lea el campo field_new.
 5. El servicio A, solo envía el campo field_new.
 
-### Escenario C3
+#### Escenario C3
 El servicio A envía el evento1 (stream) con el campo field_old. Pero field_old debe cambiar en field_new. El servicio B puede leer eventos almacenados.
