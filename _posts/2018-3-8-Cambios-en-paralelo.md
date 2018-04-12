@@ -7,7 +7,7 @@ comments: true
 
 Hace unas semanas estuve en el ~WeCode~ en el taller que impartió <a href='http://www.eferro.net/' target='_blank'>eferro</a> sobre cambios paralelos. Este consistía en que nos proponia una serie de casos que debíamos solucionar siguiendo las siguientes reglas:
 
-### Reglas
+#### Reglas:
 * Nunca se debe de perder el servicio.
 * Los despliegues requieren versiones en paralelo.
 * Los despliegues deben de ser lo mas pequeños posibles.
@@ -38,7 +38,7 @@ Solución:
 5. [app1->abst1->calc2]
 6. Utilizamos solo calculo2.
 
-### Escenario PE1:
+#### Escenario PE1:
 Tenemos la applicación A, que usa calculo1 y visualiza el resultado. Queremos mejorar su rendimiento.
 
 Solución:
@@ -93,7 +93,7 @@ Suponemos por ejemplo que el cambio se va a hacer de una base de datos Sql, a No
 Como el tiempo de migración, el volumen de datos, el TTL de datos, las operaciones idempotentes, los procesos re-arrancables, los scrips de validación de datos..
 
 
-### Escenario C1
+#### Escenario C1
 El servicio A, envía usando una cola, el mensaje1 con field_old al servicio B. field_old debe cambiar a field_new.
 
 Solución:
