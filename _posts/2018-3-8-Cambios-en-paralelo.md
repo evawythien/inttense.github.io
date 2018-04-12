@@ -34,7 +34,7 @@ Solución:
 1. Añadimos a la applicación calculo2, pero no realizamos ninguna llamada.
 2. Abstraemos sideeffect fuera de los métodos.
 3. [app1 -> abst1 -> calc1]
-4.Ejecutamos calculo1 y calculo2. Usamos calculo1, pero loggeamos si calculo1 != calculo2.
+4. Ejecutamos calculo1 y calculo2. Usamos calculo1, pero loggeamos si calculo1 != calculo2.
 5. [app1->abst1->calc2]
 6. Utilizamos solo calculo2.
 
@@ -113,3 +113,6 @@ Solución:
 
 #### Escenario C3
 El servicio A envía el evento1 (stream) con el campo field_old. Pero field_old debe cambiar en field_new. El servicio B puede leer eventos almacenados.
+
+Solución:
+1.
