@@ -25,10 +25,8 @@ Ejemplo solución escenario 1:
 4. Abstraemos calculo2.
 5. Utilizamos solo calculo2.
 
-
 #### Escenario 2:
 Tenemos la aplicación A, que usa calculo1 y visualiza el resultado. Queremos cambiar calculo1 por calculo2 (mismo interface). calculo1 y calculo2 complejos. calculo1 ejecuta sideeffect y necesitamos mantenerlo. sideeffect no se puede ejecutar dos veces.
-
 
 Solución:
 1. Añadimos a la applicación calculo2, pero no realizamos ninguna llamada.
@@ -94,10 +92,8 @@ Suponemos por ejemplo que el cambio se va a hacer de una base de datos Sql, a No
 2. Hacemos que nuestra aplicación lea primero de la bbdd nueva, y luego de la vieja.
 3. Empezamos a escribir en la bbdd nueva.
 
-
 > Tras realizar estos ejercicios llegamos a la conclusión que para realizar cambios de la persistencia de nuestro software debemos de tener una serie de factores en cuenta:
 como el tiempo de migración, el volumen de datos, el TTL de datos, las operaciones idempotentes, los procesos re-arrancables, los scrips de validación de datos..
-
 
 #### Escenario 7:
 El servicio A envía, usando una cola, el mensaje1 con field_old al servicio B. field_old debe cambiar a field_new.
