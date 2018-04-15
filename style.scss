@@ -263,7 +263,7 @@ nav {
 }
 
 .post {
-    
+
     blockquote {
         margin: 1.8em .8em;
         border-left: 4px solid  $generalColor;
@@ -445,18 +445,6 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
-}
-
-.underline-magical {
-    background-image: linear-gradient(120deg, $generalColor 0%, #8fd3f4 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 100%;
-    transition: background-size 0.25s ease-in;
-    &:hover {
-        background-size: 100% 100%;
-        color: white;
-    }
 }
 
 
