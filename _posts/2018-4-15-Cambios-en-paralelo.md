@@ -53,10 +53,9 @@ El método que hemos decidido utilizar para realizar esta serie de cambios es la
 
 > Branch By Abstraction es una técnica que se utiliza para realizar un cambio a gran escala pero de forma gradual en un sistema de software. Lo que permite liberar el sistema regularmente mientras el cambio aún está en progreso.
 
-Comenzamos con una situación en la que varias partes del sistema de software tienen algún tipo de dependencia. Gradualmente vamos moviendo todo el código de cliente para utilizar la capa de abstracción hasta que la capa de abstracción realiza toda la interacción con el proveedor. Al hacer esto, aprovechamos la oportunidad para mejorar la cobertura de pruebas unitarias del proveedor a través de esta capa de abstracción.
+Comenzamos con una situación en la que varias partes del sistema de software tienen algún tipo de dependencia. Gradualmente vamos moviendo todo el código de cliente para utilizar la capa de abstracción hasta que la capa de abstracción realiza toda la interacción. Al hacer esto, aprovechamos la oportunidad para mejorar la cobertura de pruebas unitarias.
 
-
-Construimos un nuevo proveedor que implementa las características requeridas por una parte del código del cliente utilizando la misma capa de abstracción [2]. Una vez que estamos listos, cambiamos esa sección del código del cliente para usar el nuevo proveedor.
+Construimos un nuevo proveedor que implementa las características requeridas por una parte del código del cliente utilizando la misma capa de abstracción. Una vez que estamos listos, cambiamos esa sección del código del cliente para usar el nuevo proveedor.
 
 #### Escenario 4:
 Queremos realizar un cambio en el nombre del atributo member_status a membership en la entidad user (persistencia en tabla BD relacional).
