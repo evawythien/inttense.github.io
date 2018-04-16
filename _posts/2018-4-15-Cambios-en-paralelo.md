@@ -15,35 +15,34 @@ Hace unas semanas estuve en el ~WeCode~ en el taller que impartió <a href='http
 
 
 #### Escenario 1.
-Tenemos la aplicación A, que utiliza el método calculo1 y visualiza el resultado. Pero queremos cambiar calculo1 por calculo2 (mismo interface).
-Cáculo1 y calculo2 son complejos.
+Tenemos la aplicación A, que utiliza el método ```calculo1``` y visualiza el resultado. Pero queremos cambiar ```calculo1``` por ```calculo2``` (mismo interface).
+```Cáculo1``` y ```calculo2``` son complejos.
 
 Ejemplo solución escenario 1:
-1. Añadimos a la applicación calculo2, pero no realizamos ninguna llamada.
-2. Abstraemos calculo1.
-3. Ejecutamos calculo1 y calculo2. Usamos calculo1, pero loggeamos si calculo1 != calculo2.
-4. Abstraemos calculo2.
-5. Utilizamos solo calculo2.
+1. Añadimos a la applicación ```calculo2```, pero no realizamos ninguna llamada.
+2. Abstraemos ```calculo1``` y ```calculo2```.
+3. Ejecutamos ```calculo1``` y ```calculo2```. Usamos ```calculo1```, pero loggeamos si ```calculo1 != calculo2```.
+4. Utilizamos solo ```calculo2```.
 
 #### Escenario 2:
-Tenemos la aplicación A, que usa calculo1 y visualiza el resultado. Queremos cambiar calculo1 por calculo2 (mismo interface). calculo1 y calculo2 complejos. calculo1 ejecuta sideeffect y necesitamos mantenerlo. sideeffect no se puede ejecutar dos veces.
+Tenemos la aplicación A, que usa ```calculo1``` y visualiza el resultado. Queremos cambiar ```calculo1``` por calculo2 (mismo interface). ```calculo1``` y ```calculo2``` complejos. calculo1 ejecuta ```sideeffect``` y necesitamos mantenerlo. ```sideeffect``` no se puede ejecutar dos veces.
 
 Solución:
-1. Añadimos a la applicación calculo2, pero no realizamos ninguna llamada.
+1. Añadimos a la applicación ```calculo2```, pero no realizamos ninguna llamada.
 2. Abstraemos sideeffect fuera de los métodos.
-3. Abstraemos calculo1.
-4. Ejecutamos calculo1 y calculo2. Usamos calculo1, pero loggeamos si calculo1 != calculo2.
-5. Abstraemos calculo2.
-6. Utilizamos solo calculo2.
+3. Abstraemos ```calculo1```.
+4. Ejecutamos ```calculo1``` y ```calculo2```. Usamos ```calculo1```, pero loggeamos si ```calculo1 != calculo2```.
+5. Abstraemos ```calculo2```.
+6. Utilizamos solo ```calculo2```.
 
 #### Escenario 3:
-Tenemos la applicación A, que usa calculo1 y visualiza el resultado. Queremos mejorar su rendimiento.
+Tenemos la applicación A, que usa ```calculo1``` y visualiza el resultado. Queremos mejorar su rendimiento.
 
 Solución:
 1. Duplicamos el método calculo1 con otro nombre.
-2. Abstraemos calculo1.
+2. Abstraemos ```calculo1```.
 3. Refactorizamos el nuevo método.
-4. Ejecutamos los dos métodos. Usamos calculo1, pero loggeamos si el resultado de los dos métodos son diferentes.
+4. Ejecutamos los dos métodos. Usamos ```calculo1```, pero loggeamos si el resultado de los dos métodos son diferentes.
 5. Abstraemos el método duplicado.
 6. Utilizamos el método refactorizado.
 
@@ -56,34 +55,30 @@ Comenzamos con una situación en la que varias partes del sistema de software ti
 Construimos un nuevo proveedor que implementa las características requeridas por una parte del código del cliente utilizando la misma capa de abstracción. Una vez que estamos listos, cambiamos esa sección del código del cliente para usar el nuevo proveedor.
 
 #### Escenario 4:
-Queremos realizar un cambio en el nombre del atributo member_status a membership en la entidad user (persistencia en tabla BD relacional).
-
-NOTA: El atributo no tiene relación con otras tablas. El cambio hay que realizarlo en el código y en la columna.
+Queremos realizar un cambio en el nombre del atributo ```member_status``` a ```membership``` en la entidad user (persistencia en tabla BD relacional). *NOTA: El atributo no tiene relación con otras tablas. El cambio hay que realizarlo en el código y en la columna.*
 
 Solución:
-1. Creamos el nuevo atributo membership y empezamos también a insertar datos. Pero seguimos leyendo de member_status.
-2. Introducimos lógica, si membership está vacío leermos de member_status.
+1. Creamos el nuevo atributo ```membership``` y empezamos también a insertar datos. Pero seguimos leyendo de ```member_status```.
+2. Introducimos lógica, si ```membership``` está vacío leermos de ```member_status```.
 3. Pasamos los datos que quedan al nuevo campo.
-4. Empezamos a leer solo de membership.
+4. Empezamos a leer solo de ```membership```.
 
 #### Escenario 5:
 
-Transformación del atributo address a address y country en la entidad User. Anteriormente se escribía la dirección con el formarto "calle, ciudad".
-La persistencia se realiza en una tabla de base de datos relacional.
-
-NOTA: El atributo no tiene relación con otras tablas. El cambio hay que realizarlo en el código y en la columna.
+Transformación del atributo ```address``` a ```address``` y ```country``` en la entidad User. Anteriormente se escribía la dirección con el formarto "calle, ciudad".
+La persistencia se realiza en una tabla de base de datos relacional. *NOTA: El atributo no tiene relación con otras tablas. El cambio hay que realizarlo en el código y en la columna.*
 
 Solución:
-1. Creamos el nuevo atributo country y empezamos a insertar datos.
-2. Leemos los datos del nuevo atributo country, si no hay nada leemos del campo antiguo address. (Mediante lógica)
-3. Escribimos en el campo address los datos sin el pais.
+1. Creamos el nuevo atributo ```country``` y empezamos a insertar datos.
+2. Leemos los datos del nuevo atributo ```country```, si no hay nada leemos del campo antiguo ```address```. (Mediante lógica)
+3. Escribimos en el campo ```address``` los datos sin el pais.
 4. Actualizar los datos antiguos al nuevo formato.
 5. Eliminamos la lógica del código.
 
 #### Escenario 6:
 
 Cambio de tecnología de persistencia para entidad User, el resto de entidades solo se relacionan con user por el id.
-NOTA: La entidad User no se usa en joins.
+*NOTA: La entidad User no se usa en joins.*
 
 Solución:
 
@@ -96,25 +91,19 @@ Suponemos por ejemplo que el cambio se va a hacer de una base de datos Sql, a No
 como el tiempo de migración, el volumen de datos, el TTL de datos, las operaciones idempotentes, los procesos re-arrancables, los scrips de validación de datos..
 
 #### Escenario 7:
-El servicio A envía, usando una cola, el mensaje1 con field_old al servicio B. field_old debe cambiar a field_new.
+El servicio A envía, usando una cola, el mensaje1 con ```field_old``` al servicio B. ```field_old``` debe cambiar a ```field_new```.
 
 Solución:
-1. El servicio A envía los dos campos, field_old y field_new, al servicio B.
-2. El servicio B, solo lee el campo field_new.
-3. El servicio A, solo envía el campo field_new.
+1. El servicio A envía los dos campos, ```field_old``` y ```field_new```, al servicio B.
+2. El servicio B, solo lee el campo ```field_new```.
+3. El servicio A, solo envía el campo ```field_new```.
 
 #### Escenario 8:
-El servicio A envía, usando una cola multicast, el mensaje1 con field_old al servicio B, C y D, field_old debe cambiar a field_new.
+El servicio A envía, usando una cola multicast, el mensaje1 con ```field_old``` al servicio B, C y D, ```field_old``` debe cambiar a ```field_new```.
 
 Solución:
-1. Hacemos que el servicio envíe los campos, field_old y field_new.
-2. Hacemos que el servicio B solamente lea el campo field_new.
-3. Hacemos que el servicio C solamente lea el campo field_new.
-4. Hacemos que el servicio D solamente lea el campo field_new.
-5. El servicio A, solo envía el campo field_new.
-
-#### Escenario 9:
-El servicio A envía el evento1 (stream) con el campo field_old. Pero field_old debe cambiar en field_new. El servicio B puede leer eventos almacenados.
-
-Solución:
-1.
+1. Hacemos que el servicio envíe los campos, ```field_old``` y ```field_new```.
+2. Hacemos que el servicio B solamente lea el campo ```field_new```.
+3. Hacemos que el servicio C solamente lea el campo ```field_new```.
+4. Hacemos que el servicio D solamente lea el campo ```field_new```.
+5. El servicio A, solo envía el campo ```field_new```.
