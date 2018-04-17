@@ -16,11 +16,13 @@ comments: true
         </div>
     </div>
 
+    {% if site.tags != "" %}
     <div class="postTags">
         {% for tag in page.tags %}
         <span class=""><a href="/tag/{{ tag }}">&lt;/{{ tag }}&gt;</a></span>
         {% endfor %}
     </div>
+    {% endif %}
 
     {% include socialshare.html %}
 

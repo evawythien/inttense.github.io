@@ -14,7 +14,7 @@ Hace unas semanas estuve en el ~WeCode~ en el taller que impartió <a href='http
 * No se coordinan despliegues entre servicios.
 
 
-#### Escenario 1.
+#### Escenario 1.1.
 Tenemos la aplicación A, que utiliza el método ```calculo1``` y visualiza el resultado. Pero queremos cambiar ```calculo1``` por ```calculo2``` (mismo interface).
 ```Cáculo1``` y ```calculo2``` son complejos.
 
@@ -24,7 +24,7 @@ Ejemplo solución escenario 1:
 3. Ejecutamos ```calculo1``` y ```calculo2```. Usamos ```calculo1```, pero loggeamos si ```calculo1 != calculo2```.
 4. Utilizamos solo ```calculo2```.
 
-#### Escenario 2:
+#### Escenario 1.2:
 Tenemos la aplicación A, que usa ```calculo1``` y visualiza el resultado. Queremos cambiar ```calculo1``` por calculo2 (mismo interface). ```calculo1``` y ```calculo2``` complejos. calculo1 ejecuta ```sideeffect``` y necesitamos mantenerlo. ```sideeffect``` no se puede ejecutar dos veces.
 
 Solución:
@@ -35,7 +35,7 @@ Solución:
 5. Abstraemos ```calculo2```.
 6. Utilizamos solo ```calculo2```.
 
-#### Escenario 3:
+#### Escenario 1.3:
 Tenemos la applicación A, que usa ```calculo1``` y visualiza el resultado. Queremos mejorar su rendimiento.
 
 Solución:
@@ -43,8 +43,7 @@ Solución:
 2. Abstraemos ```calculo1```.
 3. Refactorizamos el nuevo método.
 4. Ejecutamos los dos métodos. Usamos ```calculo1```, pero loggeamos si el resultado de los dos métodos son diferentes.
-5. Abstraemos el método duplicado.
-6. Utilizamos el método refactorizado.
+5. Utilizamos el método refactorizado.
 
 El método que hemos decidido utilizar para realizar esta serie de cambios es la estrategia llamada Branch By Abstraction.
 
@@ -54,7 +53,7 @@ Comenzamos con una situación en la que varias partes del sistema de software ti
 
 Construimos un nuevo proveedor que implementa las características requeridas por una parte del código del cliente utilizando la misma capa de abstracción. Una vez que estamos listos, cambiamos esa sección del código del cliente para usar el nuevo proveedor.
 
-#### Escenario 4:
+#### Escenario 2.1:
 Queremos realizar un cambio en el nombre del atributo ```member_status``` a ```membership``` en la entidad user (persistencia en tabla BD relacional). *NOTA: El atributo no tiene relación con otras tablas. El cambio hay que realizarlo en el código y en la columna.*
 
 Solución:
@@ -63,7 +62,7 @@ Solución:
 3. Pasamos los datos que quedan al nuevo campo.
 4. Empezamos a leer solo de ```membership```.
 
-#### Escenario 5:
+#### Escenario 2.2:
 
 Transformación del atributo ```address``` a ```address``` y ```country``` en la entidad User. Anteriormente se escribía la dirección con el formarto "calle, ciudad".
 La persistencia se realiza en una tabla de base de datos relacional. *NOTA: El atributo no tiene relación con otras tablas. El cambio hay que realizarlo en el código y en la columna.*
@@ -75,7 +74,7 @@ Solución:
 4. Actualizar los datos antiguos al nuevo formato.
 5. Eliminamos la lógica del código.
 
-#### Escenario 6:
+#### Escenario 2.3:
 
 Cambio de tecnología de persistencia para entidad User, el resto de entidades solo se relacionan con user por el id.
 *NOTA: La entidad User no se usa en joins.*
@@ -90,7 +89,7 @@ Suponemos por ejemplo que el cambio se va a hacer de una base de datos Sql, a No
 > Tras realizar estos ejercicios llegamos a la conclusión que para realizar cambios de la persistencia de nuestro software debemos de tener una serie de factores en cuenta:
 como el tiempo de migración, el volumen de datos, el TTL de datos, las operaciones idempotentes, los procesos re-arrancables, los scrips de validación de datos..
 
-#### Escenario 7:
+#### Escenario 3.1:
 El servicio A envía, usando una cola, el mensaje1 con ```field_old``` al servicio B. ```field_old``` debe cambiar a ```field_new```.
 
 Solución:
@@ -98,7 +97,7 @@ Solución:
 2. El servicio B, solo lee el campo ```field_new```.
 3. El servicio A, solo envía el campo ```field_new```.
 
-#### Escenario 8:
+#### Escenario 3.2:
 El servicio A envía, usando una cola multicast, el mensaje1 con ```field_old``` al servicio B, C y D, ```field_old``` debe cambiar a ```field_new```.
 
 Solución:
