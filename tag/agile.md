@@ -1,5 +1,5 @@
 ---
 layout: tagpage
 title: "Tag: agile"
-tag: Agile
+tag: agile
 ---
