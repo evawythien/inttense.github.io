@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cambios en paralelo
-tags: Agile Development
+tags: agile development
 comments: true
 ---
 
