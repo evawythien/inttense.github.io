@@ -106,3 +106,12 @@ Solución:
 3. Hacemos que el servicio C solamente lea el campo ```field_new```.
 4. Hacemos que el servicio D solamente lea el campo ```field_new```.
 5. El servicio A, solo envía el campo ```field_new```.
+
+> Para solucionar estos esacenarios se ha aplicado el principio de robustez, también conocido como Postel's law. Este principio recomienda a los programadores que asuman que la red está llena de entidades malévolas que envían paquetes diseñados para tener el peor efecto posible.
+
+Por esta razón los protocolos deben permitir la adición de nuevas funcionalidades para campos ya existentes en futuras versiones mediante la aceptación de mensajes desconocidos. De esta manera se debe evitar enviar mensajes que puedan exponer deficiencias en los receptores, y diseñar su código no solo para sobrevivir, sino también para limitar la cantidad de interrupciones que tales hosts pueden causar y así facilidad de comunicación.
+
+Relizar estos ejercicios ha supuesto para mi una manera diferente de afrontar una serie de problemas, ya que cada cambio que aplicaba tenía que ser lo mas pequeño posible para no perjudicar la estabilidad el software en ningún momento.
+
+<h5 class="C">¿Resolverías algún ejercicio de otra manera?</h5>
+<h5 class="C">¡Coméntalo aquí abajo!</h5>
