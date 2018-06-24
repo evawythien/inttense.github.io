@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 30px;
+
     a {
         color: inherit;
     }
@@ -69,7 +70,7 @@ h3 {
 h4 {
     font-size: 18px;
     color: black;
-    text-decoration: underline wavy  $generalColor;
+    text-decoration: underline wavy $generalColor;
 }
 
 p {
@@ -105,7 +106,6 @@ ul ul, ol ul {
 }
 
 li {
-
     line-height: 20pt;
 }
 
@@ -140,6 +140,7 @@ code {
     color: $black;
     background: $lightGray;
 }
+
 ::selection {
     color: $black;
     background: $lightGray;
@@ -270,7 +271,7 @@ nav {
 
     blockquote {
         margin: 1.8em .8em;
-        border-left: 4px solid  $generalColor;
+        border-left: 4px solid $generalColor;
         padding: 0.1em 1em;
         color: $gray;
         font-style: italic;
@@ -307,13 +308,13 @@ nav {
 
 .fa {
     color: $black;
+
     &:hover, &:active {
         color: $generalColor;
     }
 }
 
 .fa:hover {
-
     animation: temblor 0.5s infinite;
 }
 
@@ -331,12 +332,11 @@ hr {
 footer {
     padding: 24px 0;
     text-align: center;
-    bottom:0;
+    bottom: 0;
 }
 
 #footerIcons a .fa {
     font-size: 18px;
-
 }
 
 #footerIcons a .fa:hover {
@@ -386,7 +386,7 @@ footer {
     font-weight: bold;
 }
 
-.shareButtons, .postTags  {
+.shareButtons, .postTags {
     border: 6px solid $generalColor;
     margin: 20px 0 20px 0;
     padding: 15px;
@@ -398,14 +398,14 @@ footer {
 
 .postTags span {
     /*background-color: $generalColor;*/
-    color : black;
+    color: black;
     margin: 20px;
     padding: 5px;
 }
 
 .postTags span a {
     font-weight: bold;
-    color : black;
+    color: black;
 }
 
 /**/
@@ -415,7 +415,7 @@ footer {
 }
 
 #titlePost::after {
-    content:'_';
+    content: '_';
     animation: parpadeo 1s infinite;
 }
 
@@ -433,12 +433,14 @@ footer {
     font-size: 18px;
     padding: 20px;
     letter-spacing: 0.3em;
+
     &:hover {
         background-color: $generalColor;
         border: 5px solid #fff;
         padding: 20px;
         color: black;
     }
+
     &:hover a {
         color: #fff;
     }
@@ -458,6 +460,7 @@ footer {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -469,16 +472,19 @@ footer {
         -moz-transform: rotate(0deg);
         rotation: 0deg;
     }
+
     25% {
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         rotation: 90deg;
     }
+
     50% {
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         rotation: 180deg;
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
@@ -486,15 +492,17 @@ footer {
     }
 }
 
-@keyframes temblor{
-    0%  {
-        -webkit-transform:rotateZ(-5deg);
+@keyframes temblor {
+    0% {
+        -webkit-transform: rotateZ(-5deg);
     }
+
     50% {
-        -webkit-transform:rotateZ( 0deg) scale(.8);
+        -webkit-transform: rotateZ( 0deg) scale(.8);
     }
+
     100% {
-        -webkit-transform:rotateZ( 5deg);
+        -webkit-transform: rotateZ( 5deg);
     }
 }
 
