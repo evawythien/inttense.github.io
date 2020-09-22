@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
-    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/favicon.png" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
+        href="{{ site.baseurl }}/feed.xml" />
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <script id="dsq-count-scr" src="//http-int-tense-com.disqus.com/count.js" async></script>
     {% if site.tags != "" %}
@@ -24,33 +26,35 @@
 
             <header class="masthead clearfix">
                 <div class="site-info">
-                    <h1 class="site-name"><a href="{{ site.baseurl }}/"><span class="bicolorHead">int</span><span class="bicolorHeadPrinc">tense</span></a></h1>
+                    <h1 class="site-name"><a href="{{ site.baseurl }}/"><span class="bicolorHead">int</span><span
+                                class="bicolorHeadPrinc">tense</span></a></h1>
                 </div>
                 <div class='R'>
                     <h3><a href="{{ site.baseurl }}/">BLOG</a> /
                         <a href="{{ site.baseurl }}/projects">PROJECTS</a> /
                         <a href="{{ site.baseurl }}/about">ABOUT</a> /</h3>
-                    </div>
-                </header>
-            </div>
+                </div>
+            </header>
         </div>
+    </div>
 
-        <div id="main" role="main" class="container">
-            {{ content }}
+    <div id="main" role="main" class="container">
+        {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+        <div class="container">
+            <footer class="footer">
+                <div id="logoFooter"><a href="http://www.int-tense.com">inttense</a></div>
+                <div id="footerIcons">
+                    <a href="https://github.com/evawythien" target="_blank"><i class="fa fa-github-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/evadevena" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://codepen.io/evawythien/" target="_blank"><i class="fa fa-codepen"></i></a>
+                </div>
+            </footer>
         </div>
+    </div>
 
-        <div class="wrapper-footer">
-            <div class="container">
-                <footer class="footer">
-                    <div id="logoFooter"><a href="http://www.int-tense.com">inttense</a></div>
-                    <div id="footerIcons">
-                        <a href="https://github.com/evawythien" target="_blank"><i class="fa fa-github-alt"></i></a>
-                        <a href="https://www.linkedin.com/in/evadevena" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://codepen.io/evawythien/" target="_blank"><i class="fa fa-codepen"></i></a>
-                    </div>
-                </footer>
-            </div>
-        </div>
+</body>
 
-    </body>
-    </html>
+</html>

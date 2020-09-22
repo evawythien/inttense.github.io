@@ -26,7 +26,9 @@ body {
     color: $darkGray;
 }
 
-p::selection, li::selection, .entry h3::selection {
+p::selection,
+li::selection,
+.entry h3::selection {
     background: $generalColor;
     color: black;
 }
@@ -38,8 +40,13 @@ p::selection, li::selection, .entry h3::selection {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Mono', monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Mono", monospace;
     color: $darkerGray;
     font-weight: bold;
     line-height: 1.7;
@@ -84,7 +91,8 @@ a {
     cursor: pointer;
 }
 
-ul, ol {
+ul,
+ol {
     margin: 15px 0;
     padding-left: 30px;
 }
@@ -97,11 +105,15 @@ ol {
     list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
     margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
     list-style-type: circle;
 }
 
@@ -109,11 +121,13 @@ li {
     line-height: 20pt;
 }
 
-em, i {
+em,
+i {
     font-style: italic;
 }
 
-strong, b {
+strong,
+b {
     font-weight: bold;
 }
 
@@ -131,7 +145,7 @@ code {
 }
 
 .date {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     color: $gray;
 }
 
@@ -166,10 +180,9 @@ code {
 // .masthead
 //
 
-
 .masthead {
     padding: 20px 0px 0px 0px;
-    border-bottom: 2px solid #46494C;
+    border-bottom: 2px solid #46494c;
 
     @include mobile {
         text-align: center;
@@ -268,9 +281,8 @@ nav {
 }
 
 .post {
-
     blockquote {
-        margin: 1.8em .8em;
+        margin: 1.8em 0.8em;
         border-left: 4px solid $generalColor;
         padding: 0.1em 1em;
         color: $gray;
@@ -309,7 +321,8 @@ nav {
 .fa {
     color: $black;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
         color: $generalColor;
     }
 }
@@ -365,7 +378,7 @@ footer {
 }
 
 .bicolorHead {
-    color: #46494C;
+    color: #46494c;
     font-weight: bold;
 }
 
@@ -375,7 +388,7 @@ footer {
 }
 
 .bicolorTitle {
-    color: #46494C;
+    color: #46494c;
     font-size: 25px;
     font-weight: bold;
 }
@@ -386,7 +399,8 @@ footer {
     font-weight: bold;
 }
 
-.shareButtons, .postTags {
+.shareButtons,
+.postTags {
     border: 6px solid $generalColor;
     margin: 20px 0 20px 0;
     padding: 15px;
@@ -415,7 +429,7 @@ footer {
 }
 
 #titlePost::after {
-    content: '_';
+    content: "_";
     animation: parpadeo 1s infinite;
 }
 
@@ -452,7 +466,6 @@ footer {
     margin-bottom: 20px;
     font-weight: bold;
 }
-
 
 /* ANIMACIONES */
 
@@ -498,17 +511,15 @@ footer {
     }
 
     50% {
-        -webkit-transform: rotateZ( 0deg) scale(.8);
+        -webkit-transform: rotateZ(0deg) scale(0.8);
     }
 
     100% {
-        -webkit-transform: rotateZ( 5deg);
+        -webkit-transform: rotateZ(5deg);
     }
 }
 
 /* ANIMACIONES */
-
-
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
